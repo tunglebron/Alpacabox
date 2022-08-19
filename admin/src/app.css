@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  margin-top: 10px;
+  height: calc(100vh - 60px);
+}
+
+.main {
+  overflow-y: auto;
+  /* height: calc(100vh - 50px); */
+  flex: 4 1;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.full {
+  width: 100vw;
+  height: 100vh;
+}
+
+input:focus-visible {
+  outline: none;
+}
+

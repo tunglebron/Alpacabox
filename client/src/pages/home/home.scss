@@ -1,0 +1,20 @@
+.home {
+  background-color: var(--main-color);
+  overflow: hidden;
+
+  & .main {
+    min-height: 120px;
+
+    .noItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      height: 120px;
+    }
+  }
+
+}

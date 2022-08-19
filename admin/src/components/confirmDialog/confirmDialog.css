@@ -1,0 +1,29 @@
+.confirmDialog {
+  max-width: 480px;
+  max-height: 250px;
+  padding: 40px;
+  display: block;
+  user-select: none;
+}
+
+.confirmation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 64px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+b {
+  color: red;
+}

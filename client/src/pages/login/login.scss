@@ -1,0 +1,122 @@
+@import "../../app.scss";
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://images2.alphacoders.com/682/thumb-1920-682195.jpg");
+  background-size: cover;
+  position: relative;
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 140px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    @include mobile {
+      top: 10vh;
+      display: flex;
+      text-align: center;
+    }
+
+    form {
+      width: 300px;
+      height: 400px;
+      padding: 30px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+
+      @include mobile {
+        width: 75vw;
+        height: 60vh;
+      }
+
+      h1 {
+        font-weight: 500;
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      input {
+        height: 40px;
+        border-radius: 5px;
+        background-color: gray;
+        color: white;
+        padding-left: 10px;
+        outline: none;
+
+        @include mobile {
+          height: 5vh;
+        }
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+
+      button {
+        height: 40px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @include mobile {
+          margin-top: 1,5vh;
+          height: 36px;
+        }
+      }
+
+      span {
+        color: lightgray;
+
+        b {
+          color: white;
+        }
+
+        &.error {
+          font-size: 12px;
+          color: red;
+        }
+      }
+    }
+  }
+}

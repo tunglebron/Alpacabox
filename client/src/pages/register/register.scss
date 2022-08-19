@@ -1,0 +1,172 @@
+@import "../../app.scss";
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://images2.alphacoders.com/617/thumb-1920-617613.jpg");
+  background-size: cover;
+  position: relative;
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 140px;
+        cursor: pointer;
+      }
+
+      .loginButton {
+        background-color: red;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 0;
+
+    @include mobile {
+      top: 10vh;
+      display: flex;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+
+    h2 {
+      margin: 20px;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    form {
+      width: 300px;
+      height: 400px;
+      padding: 30px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+
+      @include mobile {
+        width: 75vw;
+        height: 60vh;
+      }
+
+      h1 {
+        font-weight: 500;
+        font-size: 32px;
+
+        @include mobile {
+          font-size: 4vh;
+        }
+      }
+
+      input {
+        height: 40px;
+        border-radius: 5px;
+        background-color: gray;
+        color: white;
+        padding-left: 10px;
+        outline: none;
+
+        @include mobile {
+          height: 5vh;
+        }
+
+        &::placeholder {
+          color: lightgray;
+        }
+
+      }
+
+      button {
+        height: 40px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      span {
+        color: lightgray;
+
+        b {
+          color: white;
+        }
+
+        &.error {
+          color: red;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .registerButton {
+      margin-top: 20px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: red;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+
+      @include mobile {
+        margin-top: 1,5vh;
+        height: 36px;
+      }
+    }
+  }
+}
