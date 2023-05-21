@@ -4,7 +4,7 @@ import App from './App';
 import { AuthContextProvider } from './context/authContext/AuthContext'
 
 //global.proxy = "//192.168.56.1:8000/api/"
-global.proxy = "//localhost:8000/api/"
+global.proxy = "http://alpacabox.onrender.com/api/"
 
 ReactDOM.render(
   <React.StrictMode>
