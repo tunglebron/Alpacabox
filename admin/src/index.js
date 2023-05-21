@@ -7,7 +7,7 @@ import { ListContextProvider } from './context/listContext/ListContext';
 import { UserContextProvider } from './context/userContext/UserContext';
 
 //global.proxy = "//192.168.56.1:8000/api/"
-gloabal.proxy = "https://alpacabox.onrender.com/api/"
+global.proxy = "https://alpacabox.onrender.com/api/"
 
 ReactDOM.render(
   <React.StrictMode>
